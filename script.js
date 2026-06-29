@@ -2,6 +2,7 @@ function setupRevealOnScroll() {
   const selector = [
     ".useful-item",
     ".experience-card",
+    ".case-card",
     ".technical-project",
     ".process-card",
     ".leader-role-card",
