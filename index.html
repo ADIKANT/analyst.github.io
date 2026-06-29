@@ -66,8 +66,8 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260629-bi-engineer-2" />
-    <script type="module" src="script.js?v=20260629-bi-engineer-2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260629-bi-engineer-3" />
+    <script type="module" src="script.js?v=20260629-bi-engineer-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -85,7 +85,6 @@
               <li>6+ лет в BI и DWH</li>
               <li>50+ дашбордов в DataLens и Power BI</li>
               <li>100+ финальных витрин данных</li>
-              <li>30 интегрированных источников</li>
               <li>200 активных пользователей BI в месяц</li>
             </ul>
             <div class="cta-row">
@@ -136,11 +135,11 @@
           </article>
           <article class="useful-item">
             <h2>SQL, S2T и витрины</h2>
-            <p>Описываю источники, поля, связи, фильтры, правила расчета и проверки качества для ClickHouse, Trino, PostgreSQL и MS SQL</p>
+            <p>Проектирую витрины, связи, фильтры, правила расчета и проверки качества данных</p>
           </article>
           <article class="useful-item">
-            <h2>Дашборды и self-service</h2>
-            <p>Проектирую отчетность в DataLens, Superset и Power BI так, чтобы пользователи могли работать с данными без ручной сборки в Excel</p>
+            <h2>Self-service и качество данных</h2>
+            <p>Помогаю пользователям самостоятельно работать с проверенными и актуальными данными</p>
           </article>
           <article class="useful-item">
             <h2>Качество и поддержка</h2>
@@ -163,14 +162,15 @@
                 <h3>Атом</h3>
                 <p class="timeline-role">Lead BI-разработчик</p>
                 <p class="experience-context">
-                  Первый BI-специалист в data-направлении Атома. Запустил корпоративную отчетность с нуля, собрал процесс от запроса до релиза, развил команду аналитики и перевел ключевые управленческие домены в DataLens
+                  Запустил корпоративную отчетность с нуля, собрал процесс от запроса до релиза, развил команду аналитики и перевел ключевые управленческие домены в DataLens
                 </p>
                 <ul class="responsibility-list">
                   <li>Собираю требования у руководителей и команд, формализую метрики, бизнес-логику, макеты, приоритеты и критерии приемки</li>
-                  <li>Готовлю S2T и ТЗ на витрины, описываю источники, поля, связи, фильтры, правила расчета и проверки качества</li>
+                  <li>Готовлю S2T, ТЗ на витрины, описание источников, полей, связей, фильтров, правил расчета и проверок качества данных</li>
                   <li>Разработал и запустил отчетность для финансов, продаж, маркетинга, HR, закупок, производства, продукта, телематики, рисков, качества и проектных команд</li>
                   <li>Развиваю контур данных вместе с DWH и data platform, участвовал в интеграции 30 источников, в raw-слое более 4000 объектов</li>
-                  <li>Настраиваю обновления через Airflow, контролирую актуальность данных на prod-контуре, разбираю сбои загрузок и расхождения между источниками</li>
+                  <li>Разрабатываю и оптимизирую витрины в ClickHouse, проверяю полноту загрузок, корректность расчетов и расхождения между источниками</li>
+                  <li>Настраиваю обновление витрин через Airflow, контролирую актуальность данных на prod-контуре и разбираю причины сбоев загрузок</li>
                   <li>Координирую 6 аналитиков, провожу ревью BI-решений, веду базу знаний, обучаю пользователей и развиваю self-service BI</li>
                 </ul>
               </div>
@@ -277,41 +277,32 @@
           <div class="cases-list">
             <article class="case-card">
               <div class="case-card-head">
-                <p class="case-company">Атом · BI с нуля</p>
-                <h3>Корпоративная BI-отчетность в DataLens с нуля</h3>
-                <p>В Атоме не было единого BI-контура. Управленческие данные собирались из систем, файлов и ручных расчетов, а руководителям нужны были регулярные показатели по финансам, продажам, маркетингу, HR, закупкам, производству, продукту, телематике, рискам и качеству</p>
+                <p class="case-company">Атом · запуск BI с нуля</p>
+                <h3>Выбор BI-системы и запуск корпоративной отчетности</h3>
+                <p>В компании формировалось data-направление, управленческая отчетность собиралась из разных систем и файлов, а бизнесу нужен был единый BI-контур с понятными метриками, автоматическим обновлением и регулярной поддержкой</p>
               </div>
               <div class="case-card-body">
                 <section>
-                  <h4>Моя роль</h4>
-                  <p>Я был первым BI-специалистом направления, собрал требования у бизнес-команд, запустил первые дашборды в DataLens, описал метрики и правила приемки, затем сформировал команду и стал проводить ревью всех BI-решений</p>
+                  <h4>Ситуация</h4>
+                  <p>После ухода части зарубежных BI-инструментов нужно было выбрать рабочую платформу для корпоративной отчетности и быстро показать бизнесу, что данные можно использовать в регулярном управлении</p>
+                </section>
+                <section>
+                  <h4>Задача</h4>
+                  <p>Выбрать BI-систему, проверить ее на реальных данных, собрать первые дашборды для ключевых доменов и доказать, что решение подходит для масштабирования</p>
                 </section>
                 <section>
                   <h4>Действия</h4>
                   <ul>
-                    <li>Собрал отчетность для 30+ команд и управленческих доменов</li>
-                    <li>Перевел повторяющиеся Excel-расчеты в дашборды с автоматическим обновлением</li>
-                    <li>Ввел правила описания метрик, S2T, приемки, документации и поддержки</li>
-                    <li>Провел воркшопы и демо, чтобы команды начали пользоваться BI как рабочим инструментом</li>
+                    <li>Провел анализ рынка BI-систем, выбрал несколько кандидатов, протестировал их на рабочих сценариях и остановился на DataLens</li>
+                    <li>Параллельно разобрал текущую отчетность и требования в финансах, HR, закупках, проектной деятельности и других бизнес-доменах</li>
+                    <li>Зафиксировал потребности заказчиков, будущие ожидания от отчетности, ключевые метрики, источники и правила расчета</li>
+                    <li>Описал первые интеграции источников и S2T по объектам, первые загрузки реализовал самостоятельно через Python и cron-скрипты</li>
+                    <li>Собрал первые дашборды, провел демо для заказчиков и использовал обратную связь для запуска полноценного внедрения</li>
                   </ul>
                 </section>
                 <section class="case-result">
                   <h4>Результат</h4>
-                  <p>50+ дашбордов, 200 активных пользователей BI в месяц, 30+ команд в контуре, рост использования системы с нуля до регулярной управленческой практики</p>
-                  <ul class="case-result-metrics" aria-label="Ключевые метрики результата">
-                    <li>
-                      <strong>50+</strong>
-                      <span>дашбордов</span>
-                    </li>
-                    <li>
-                      <strong>200</strong>
-                      <span>активных пользователей BI в месяц</span>
-                    </li>
-                    <li>
-                      <strong>30+</strong>
-                      <span>команд в контуре</span>
-                    </li>
-                  </ul>
+                  <p>DataLens стал основной BI-системой компании, в контуре появилось 50+ дашбордов, 30+ бизнес-команд и 200 активных пользователей BI в месяц</p>
                 </section>
               </div>
             </article>
@@ -319,40 +310,31 @@
             <article class="case-card">
               <div class="case-card-head">
                 <p class="case-company">Атом · DWH и качество данных</p>
-                <h3>Витрины данных, Airflow и контроль актуальности</h3>
-                <p>BI-отчетность быстро выросла, и без стабильного слоя витрин пользователи возвращались к ручной сверке. Нужно было связать бизнес-логику, источники, DWH, DataLens и контроль качества так, чтобы отчетам доверяли</p>
+                <h3>Витрины, загрузки и контроль актуальности данных</h3>
+                <p>По мере роста BI-контур стал зависеть от десятков источников, регулярных загрузок и согласованных расчетов, поэтому отчетность нужно было перевести из набора отдельных решений в поддерживаемый процесс</p>
               </div>
               <div class="case-card-body">
                 <section>
-                  <h4>Моя роль</h4>
-                  <p>Я проектировал витрины и датасеты для BI, готовил S2T и ТЗ, проверял расчеты, загрузки, связи между объектами и расхождения, а задачи на платформенную доработку ставил в data platform и DWH</p>
+                  <h4>Ситуация</h4>
+                  <p>Бизнес быстро подключал новые домены, а данные приходили из CRM, баз данных, API, файлов и Kafka, без понятных правил витрин и контроля актуальности пользователи тратили время на сверки и уточнения</p>
+                </section>
+                <section>
+                  <h4>Задача</h4>
+                  <p>Сделать витрины и загрузки надежной основой для BI, чтобы дашборды обновлялись по расписанию, показатели считались одинаково, а проблемы с данными быстро находились и исправлялись</p>
                 </section>
                 <section>
                   <h4>Действия</h4>
                   <ul>
-                    <li>Описал более 100 финальных витрин данных для dm-слоя и BI-отчетности</li>
-                    <li>Участвовал в интеграции 30 источников, включая базы данных, CRM, API, файлы и Kafka</li>
-                    <li>Выстроил проверки свежести, полноты и корректности данных на prod-контуре</li>
-                    <li>Поддержал процесс разработки на dev, тестирования на stage и релиза на prod с ревью и документацией</li>
+                    <li>Описывал бизнес-логику, S2T, источники, поля, связи, фильтры, правила расчета метрик и проверки качества данных</li>
+                    <li>Ставил задачи на интеграции и платформенные доработки, согласовывал приоритеты с командами DWH, data governance и бизнес-заказчиками</li>
+                    <li>Разрабатывал и оптимизировал витрины в ClickHouse, проверял полноту загрузок, корректность расчетов и расхождения между источниками</li>
+                    <li>Контролировал обновления через Airflow, актуальность данных на prod-контуре и причины сбоев загрузок</li>
+                    <li>Разделил процесс разработки по средам dev, stage и prod, добавил ревью, тестирование и документацию в Jira и Confluence</li>
                   </ul>
                 </section>
                 <section class="case-result">
                   <h4>Результат</h4>
-                  <p>95% SLA по актуальности данных на prod-контуре, более 100 витрин, более 4000 объектов в raw-слое, меньше ручных сверок и понятная зона ответственности между BI, DWH и бизнесом</p>
-                  <ul class="case-result-metrics" aria-label="Ключевые метрики результата">
-                    <li>
-                      <strong>95%</strong>
-                      <span>SLA по актуальности данных</span>
-                    </li>
-                    <li>
-                      <strong>более 100</strong>
-                      <span>витрин</span>
-                    </li>
-                    <li>
-                      <strong>более 4000</strong>
-                      <span>объектов в raw-слое</span>
-                    </li>
-                  </ul>
+                  <p>В BI-контуре появилось 100+ витрин, 30 источников, 4000+ объектов в raw-слое и 95% SLA по актуальности данных на prod-контуре</p>
                 </section>
               </div>
             </article>
@@ -360,36 +342,31 @@
             <article class="case-card">
               <div class="case-card-head">
                 <p class="case-company">Атом · процесс и self-service</p>
-                <h3>Процесс BI-разработки и self-service аналитика</h3>
-                <p>Количество запросов росло, а без понятного процесса срочные просьбы конкурировали с важными задачами. Бизнесу нужен был прозрачный путь от идеи до отчета, а команде — единые правила оценки, приоритетов и поддержки</p>
+                <h3>Процесс аналитических запросов и развитие self-service BI</h3>
+                <p>Количество запросов росло быстрее команды, поэтому нужно было сделать работу с аналитикой прозрачной для бизнеса и управляемой внутри data-направления</p>
               </div>
               <div class="case-card-body">
                 <section>
-                  <h4>Моя роль</h4>
-                  <p>Я собрал процесс работы аналитической команды, веду roadmap, Jira, Confluence, RICE-приоритизацию, ревью решений, обучение пользователей и развитие self-service подхода</p>
+                  <h4>Ситуация</h4>
+                  <p>Бизнес-команды приходили с регулярной отчетностью, ad hoc анализом, проверками данных и доработками дашбордов, без единого процесса было сложно сравнивать ценность задач и держать сроки</p>
+                </section>
+                <section>
+                  <h4>Задача</h4>
+                  <p>Выстроить понятный цикл от запроса до релиза, распределить роли внутри команды и дать пользователям возможность самостоятельно работать с проверенными и актуальными данными</p>
                 </section>
                 <section>
                   <h4>Действия</h4>
                   <ul>
-                    <li>Ввел единый вход для BI-запросов, оценку по бизнес-эффекту, приоритизацию и планирование</li>
-                    <li>Разделил роли между системным аналитиком, дата-аналитиком, DWH и заказчиком</li>
-                    <li>Настроил цикл требований, S2T, разработки, тестирования, демо, релиза и поддержки</li>
-                    <li>Запустил базу знаний, стандарты BI-разработки, воркшопы и консультации для пользователей</li>
+                    <li>Ввел единый вход для запросов, RICE-приоритизацию, прозрачный backlog в Jira Plans и документацию в Confluence</li>
+                    <li>Разделил работу на этапы анализа, S2T, разработки витрины, разработки дашборда, тестирования, демо, релиза и поддержки</li>
+                    <li>Настроил ревью BI-решений, единый стандарт разработки дашбордов и описание метрик для прозрачности между командами</li>
+                    <li>Провел серию воркшопов и демо, объяснял пользователям принципы работы с данными, метриками и отчетностью</li>
+                    <li>Запустил развитие self-service BI на основе витрин data platform, семантического слоя, описания данных и понятных правил доступа</li>
                   </ul>
                 </section>
                 <section class="case-result">
                   <h4>Результат</h4>
-                  <p>Более 1000 часов ручной работы автоматизировано в месяц, около 300 млн рублей годового эффекта по оценке бизнеса, self-service становится рабочей моделью для команд</p>
-                  <ul class="case-result-metrics" aria-label="Ключевые метрики результата">
-                    <li>
-                      <strong>Более 1000</strong>
-                      <span>часов ручной работы автоматизировано в месяц</span>
-                    </li>
-                    <li>
-                      <strong>около 300 млн</strong>
-                      <span>рублей годового эффекта по оценке бизнеса</span>
-                    </li>
-                  </ul>
+                  <p>BI используется 200 активными пользователями в месяц, решения покрывают 30+ команд, автоматизировано 1000+ часов ручной работы в месяц, оценочный эффект для компании составляет около 300 млн рублей в год</p>
                 </section>
               </div>
             </article>
@@ -398,35 +375,29 @@
               <div class="case-card-head">
                 <p class="case-company">Mars · коммерческая аналитика</p>
                 <h3>Модель выбора магазинов для расширения полки</h3>
-                <p>В Пятёрочке часть магазинов малого формата продавала выше среднего уровня магазинов более крупного формата. Это означало, что спрос уже есть, но полка и ассортимент не дают точкам раскрыть потенциал</p>
+                <p>Коммерческой команде был нужен список магазинов, где расширение полочного пространства можно подтвердить данными и использовать в переговорах с сетью</p>
               </div>
               <div class="case-card-body">
                 <section>
-                  <h4>Моя роль</h4>
-                  <p>Я собрал продажи по точкам, сгруппировал магазины по формату и площади, сравнил продажи между форматами, подготовил список точек и передал коммерческой команде аргументацию для переговоров</p>
+                  <h4>Ситуация</h4>
+                  <p>Продажи категории зависели от площади магазина, размера полки, ассортимента и спроса, при этом часть небольших точек продавала лучше сопоставимых магазинов более крупного формата</p>
+                </section>
+                <section>
+                  <h4>Задача</h4>
+                  <p>Найти магазины с подтвержденным потенциалом роста и подготовить аргументацию для переговоров о расширении полочного пространства</p>
                 </section>
                 <section>
                   <h4>Действия</h4>
                   <ul>
-                    <li>Сравнил магазины форматов 5, 10, 15 и 20 по продажам и площади</li>
-                    <li>Выделил точки, где продажи были выше среднего уровня магазинов следующего формата</li>
-                    <li>Подготовил список магазинов для расширения полочного пространства в регионе Урал</li>
-                    <li>После пилота сравнил продажи до и после изменения выкладки</li>
+                    <li>Собрал продажи по магазинам и месяцам, сгруппировал точки по формату и площади</li>
+                    <li>Сравнил продажи внутри групп и выделил магазины, где спрос был выше среднего уровня более крупного формата</li>
+                    <li>Подготовил расчет в Excel, Power Query, Power BI и SQL, сформировал список точек и передал его коммерческому руководителю</li>
+                    <li>После изменения выкладки сравнил продажи пилотных точек с предыдущей динамикой и оценил дополнительный эффект</li>
                   </ul>
                 </section>
                 <section class="case-result">
                   <h4>Результат</h4>
-                  <p>59 млн рублей дополнительных продаж в пилоте, best practice на уровне страны, около 200 млн рублей дополнительных продаж после масштабирования подхода на X5</p>
-                  <ul class="case-result-metrics" aria-label="Ключевые метрики результата">
-                    <li>
-                      <strong>59 млн</strong>
-                      <span>рублей дополнительных продаж в пилоте</span>
-                    </li>
-                    <li>
-                      <strong>около 200 млн</strong>
-                      <span>рублей после масштабирования на X5</span>
-                    </li>
-                  </ul>
+                  <p>Пилот принес 59 млн рублей дополнительных продаж, подход признали best practice на уровне страны и масштабировали на X5, где эффект составил около 200 млн рублей</p>
                 </section>
               </div>
             </article>
@@ -434,36 +405,30 @@
             <article class="case-card">
               <div class="case-card-head">
                 <p class="case-company">Mars · контроль размещений</p>
-                <h3>Контроль дополнительных мест продаж</h3>
-                <p>Mars платил сетям за контрактные дополнительные места продаж, но фактическое наличие нужно было регулярно проверять. Без контроля часть оплаченного размещения могла не работать на продажи</p>
+                <h3>Отчетность по контрактным дополнительным местам продаж</h3>
+                <p>Компания оплачивала дополнительные места продаж в сетях, но фактическое наличие размещений нужно было регулярно подтверждать по точкам, мерчендайзерам и руководителям</p>
               </div>
               <div class="case-card-body">
                 <section>
-                  <h4>Моя роль</h4>
-                  <p>Я выгрузил данные мерчендайзеров из OLAP, собрал регулярный отчет по точкам, руководителям и командам, сделал рейтинг ответственных и запустил еженедельный контроль покрытия</p>
+                  <h4>Ситуация</h4>
+                  <p>Данные из системы мерчендайзинга показывали, что покрытие контрактных мест продаж было ниже ожидаемого уровня, из-за этого часть оплаченного размещения не давала нужный эффект</p>
+                </section>
+                <section>
+                  <h4>Задача</h4>
+                  <p>Сделать регулярный контроль наличия дополнительных мест продаж и дать руководителям понятный инструмент для работы с точками и командами</p>
                 </section>
                 <section>
                   <h4>Действия</h4>
                   <ul>
-                    <li>Сопоставил список контрактных мест с фактическими фото-отчетами мерчендайзеров</li>
-                    <li>Показал, что покрытие было ниже 50%</li>
-                    <li>Настроил еженедельную отчетность по каждой точке, сети, руководителю и мерчендайзеру</li>
-                    <li>Подключил руководителей региона к регулярному контролю выполнения</li>
+                    <li>Выгрузил данные из OLAP-системы с фотографиями и отметками мерчендайзеров</li>
+                    <li>Собрал еженедельный отчет по каждой точке, сети, мерчендайзеру, тимлиду и руководителю</li>
+                    <li>Добавил рейтинг команд и регулярную прозрачность по покрытию контрактных размещений</li>
+                    <li>Передал отчетность коммерческой и полевой командам для управленческих встреч и контроля исполнения</li>
                   </ul>
                 </section>
                 <section class="case-result">
                   <h4>Результат</h4>
-                  <p>Покрытие контрактных мест выросло до 100%, проект дал около 600 млн рублей дополнительных продаж в регионе Урал и затем был масштабирован на Россию</p>
-                  <ul class="case-result-metrics" aria-label="Ключевые метрики результата">
-                    <li>
-                      <strong>100%</strong>
-                      <span>покрытие контрактных мест</span>
-                    </li>
-                    <li>
-                      <strong>около 600 млн</strong>
-                      <span>рублей дополнительных продаж в регионе Урал</span>
-                    </li>
-                  </ul>
+                  <p>За несколько месяцев покрытие контрактных дополнительных мест продаж выросло с уровня ниже 50% до 100% по сетям и точкам региона</p>
                 </section>
               </div>
             </article>
@@ -498,11 +463,104 @@
               <ul>
                 <li>Аудит отчетности, дублей и спорных метрик</li>
                 <li>Единый словарь бизнес-метрик и правила расчета</li>
-                <li>Разработка дашбордов, витрин, датасетов и документации</li>
+                <li>Разработка дашбордов, витрин, метрик и документации</li>
                 <li>Качество данных, SLA, обучение пользователей и self-service BI</li>
               </ul>
             </section>
           </div>
+        </div>
+      </section>
+
+      <section class="section nav-target" id="architecture" aria-labelledby="architecture-title">
+        <div class="container">
+          <div class="section-head section-head-compact">
+            <p class="section-kicker">Архитектура</p>
+            <h2 id="architecture-title">Контур данных и BI</h2>
+          </div>
+
+          <section class="architecture-section" aria-label="Архитектурный контекст BI и аналитики">
+            <div class="architecture-copy architecture-copy-compact">
+              <h3>От источника до self-service BI</h3>
+              <p>Работаю на стыке бизнеса, BI и data platform, описываю требования к данным, метрики, витрины, проверки качества, документацию и правила использования отчетности</p>
+            </div>
+
+            <div class="architecture-scroll" aria-label="Архитектурный контекст BI и аналитики">
+              <ol class="architecture-flow">
+                <li class="architecture-stage">
+                  <div class="architecture-stage-head">
+                    <h4>Источники</h4>
+                    <p>Системы и файлы, из которых бизнес получает исходные данные</p>
+                  </div>
+                  <ul class="architecture-tools">
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/database.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Database</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/crm.svg" alt="" width="20" height="20" loading="lazy" /></span><span>CRM</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/excel.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Files</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/api.svg" alt="" width="20" height="20" loading="lazy" /></span><span>API</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/kafka.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Kafka</span></span></li>
+                  </ul>
+                  <span class="architecture-arrow" aria-hidden="true">→</span>
+                </li>
+
+                <li class="architecture-stage">
+                  <div class="architecture-stage-head">
+                    <h4>Загрузка и обработка</h4>
+                    <p>Пайплайны, расчеты и подготовка данных для аналитических витрин</p>
+                  </div>
+                  <ul class="architecture-tools">
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/airflow.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Airflow</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/python.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Python</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/pyspark.svg" alt="" width="20" height="20" loading="lazy" /></span><span>PySpark</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/sql.svg" alt="" width="20" height="20" loading="lazy" /></span><span>SQL</span></span></li>
+                  </ul>
+                  <span class="architecture-arrow" aria-hidden="true">→</span>
+                </li>
+
+                <li class="architecture-stage">
+                  <div class="architecture-stage-head">
+                    <h4>Хранение и витрины</h4>
+                    <p>Слой raw, Iceberg и витрины, на которые опираются BI-решения</p>
+                  </div>
+                  <ul class="architecture-tools">
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/s3.svg" alt="" width="20" height="20" loading="lazy" /></span><span>S3</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/iceberg.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Iceberg</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/clickhouse.svg" alt="" width="20" height="20" loading="lazy" /></span><span>ClickHouse</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/postgresql.svg" alt="" width="20" height="20" loading="lazy" /></span><span>PostgreSQL</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/microsoft-sql.svg" alt="" width="20" height="20" loading="lazy" /></span><span>MS SQL</span></span></li>
+                  </ul>
+                  <span class="architecture-arrow" aria-hidden="true">→</span>
+                </li>
+
+                <li class="architecture-stage">
+                  <div class="architecture-stage-head">
+                    <h4>Доступ и BI</h4>
+                    <p>Инструменты для SQL-доступа, проверки расчетов, визуализации и самостоятельной аналитики</p>
+                  </div>
+                  <ul class="architecture-tools">
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/trino.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Trino</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/dbeaver.svg" alt="" width="20" height="20" loading="lazy" /></span><span>DBeaver</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/datalens.svg" alt="" width="20" height="20" loading="lazy" /></span><span>DataLens</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/superset.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Superset</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/power-bi.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Power BI</span></span></li>
+                  </ul>
+                  <span class="architecture-arrow" aria-hidden="true">→</span>
+                </li>
+
+                <li class="architecture-stage">
+                  <div class="architecture-stage-head">
+                    <h4>Governance</h4>
+                    <p>Правила качества, метрик, доступа, документации и поддержки</p>
+                  </div>
+                  <ul class="architecture-tools">
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/metrics.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Metrics</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/data-quality.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Data quality</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/access-control.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Access control</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/lineage.svg" alt="" width="20" height="20" loading="lazy" /></span><span>Lineage</span></span></li>
+                    <li><span class="architecture-tool"><span class="architecture-tool-icon"><img src="assets/icons/architecture/openmetadata.svg" alt="" width="20" height="20" loading="lazy" /></span><span>OpenMetadata</span></span></li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </section>
         </div>
       </section>
 

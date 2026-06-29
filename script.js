@@ -6,6 +6,7 @@ function setupRevealOnScroll() {
     ".technical-project",
     ".process-card",
     ".leader-role-card",
+    ".architecture-stage",
     ".speaking-card",
     ".contact-card",
     ".case-detail-block"
