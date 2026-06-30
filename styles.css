@@ -1065,15 +1065,6 @@ svg {
 }
 
 
-/* hero chips в один ряд на десктопе */
-.hero-proof-list {
-  flex-wrap: nowrap;
-}
-
-.hero-proof-list li {
-  white-space: nowrap;
-}
-
 /* явная ситуация в левой части кейса */
 .case-situation-label {
   margin-top: 1.05rem;
@@ -1085,18 +1076,81 @@ svg {
   text-transform: uppercase;
 }
 
-.contact-card-single {
-  max-width: 760px;
-}
-
-/* mobile */
-@media (max-width: 760px) {
+@media (min-width: 1081px) {
   .hero-proof-list {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 0.55rem;
+    align-items: start;
+    max-width: 100%;
   }
 
   .hero-proof-list li {
-    white-space: normal;
+    white-space: nowrap;
+    padding: 0.5rem 0.72rem;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-proof-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contact-section {
+  padding-bottom: 3.2rem;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.contact-copy h2 {
+  max-width: 20ch;
+  margin-top: 0.65rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.contact-copy p:not(.section-kicker) {
+  max-width: 64ch;
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.contact-panel .contact-actions {
+  display: grid;
+  gap: 0.72rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.contact-panel .btn {
+  width: 100%;
+  min-height: 54px;
+}
+
+@media (max-width: 860px) {
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .contact-copy h2 {
+    max-width: 100%;
+    font-size: 2rem;
   }
 }
 
